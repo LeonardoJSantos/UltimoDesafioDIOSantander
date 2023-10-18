@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
-@Entity(name = "tb_function")
+@Entity
+@Table(name = "tb_function")
 public class Function {
 
     @Id

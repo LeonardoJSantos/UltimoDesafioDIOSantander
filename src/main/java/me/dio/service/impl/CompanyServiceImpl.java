@@ -25,7 +25,7 @@ public class CompanyServiceImpl implements CompanyService {
     @Override
     public Company create(Company CompanyToCreate) {
         if (CompanyRepository.findById()) {
-            throw new IllegalArgumentException("This Account number already exists.");
+            throw new IllegalArgumentException("This Company number already exists.");
         }
         return companyRepository.save(CompanyToCreate);  }
 }

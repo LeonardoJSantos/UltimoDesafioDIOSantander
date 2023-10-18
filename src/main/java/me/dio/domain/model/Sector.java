@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
-@Entity(name = "tb_sector")
+@Entity
+@Table(name = "tb_sector")
 public class Sector {
 
     @Id
